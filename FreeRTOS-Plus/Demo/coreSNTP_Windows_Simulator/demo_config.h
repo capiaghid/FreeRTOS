@@ -76,6 +76,7 @@ extern void vLoggingPrintf( const char * pcFormatString,
  *
  * #define democonfigSNTP_CLIENT_POLLING_INTERVAL_SECONDS                  ( 16 )
  */
+#define democonfigSNTP_CLIENT_POLLING_INTERVAL_SECONDS (5)
 
 /**
  * @brief The set of time servers, in decreasing order of priority, for configuring the SNTP client.
@@ -84,6 +85,7 @@ extern void vLoggingPrintf( const char * pcFormatString,
  *
  * #define democonfigLIST_OF_TIME_SERVERS          "<custom-timeserver-1>", "<custom-timeserver-2>", "pool.ntp.org"
  */
+#define democonfigLIST_OF_TIME_SERVERS          "ch.pool.ntp.org"
 
 /**
  * @brief The list of 128-bit (or 16 bytes) symmetric keys for authenticating communication with the NTP/SNTP time servers
@@ -117,6 +119,7 @@ extern void vLoggingPrintf( const char * pcFormatString,
  *
  * #define democonfigLIST_OF_AUTHENTICATION_SYMMETRIC_KEYS  "<hexstring-key-1>", "<hexstring-key-2>", NULL
  */
+#define democonfigLIST_OF_AUTHENTICATION_SYMMETRIC_KEYS
 
 /**
  * @brief The list of key IDs of the shared @ref democonfigLIST_OF_AUTHENTICATION_SYMMETRIC_KEYS keys between
@@ -131,6 +134,7 @@ extern void vLoggingPrintf( const char * pcFormatString,
  *
  * #define democonfigLIST_OF_AUTHENTICATION_KEY_IDS    <key-ID-1>, <key-ID-2>, -1
  */
+#define democonfigLIST_OF_AUTHENTICATION_KEY_IDS
 
 /**
  * @brief The year to bake in the demo application for initializing the system clock with.
